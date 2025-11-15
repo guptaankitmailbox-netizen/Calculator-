@@ -25,3 +25,16 @@ def add(a: Number, b: Number) -> Number:
 def subtract(a: Number, b: Number) -> Number:
     """Return the difference a - b."""
     return a - b
+
+def multiply(a: Number, b: Number) -> Number:
+    """Return the product of a and b."""
+    return a * b
+
+def divide(a: Number, b: Number) -> Number:
+    """Return the division a / b.
+
+    Raises ZeroDivisionError if `b` is zero.
+    """
+    if b == 0:
+        raise ZeroDivisionError("division by zero")
+    return a / b
